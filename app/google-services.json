@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459649280495",
+    "project_id": "farmacias-6f96c",
+    "storage_bucket": "farmacias-6f96c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459649280495:android:97b6c782803d6a64e66e1a",
+        "android_client_info": {
+          "package_name": "com.grt.farmacias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459649280495-o3t5pdg4f1iluvp9e0k8jia14tb6adgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALgG0eOB5sD03XDAWoNHQNPqX0A1Yc8-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459649280495-o3t5pdg4f1iluvp9e0k8jia14tb6adgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

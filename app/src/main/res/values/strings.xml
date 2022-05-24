@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Farmacias de Rota</string>
+    <string name="title_deGuardia">De Guardia</string>
+    <string name="title_farmacias">Farmacias</string>
+    <string name="title_deInteres">De Interés</string>
+
+    <!--Cadenas para manejar el dialog error-->
+    <string name="dialog_title">Mensaje</string>
+    <string name="dialog_error_message">Se ha producido un Error</string>
+    <string name="dialog_error_accept">Aceptar</string>
+
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!--Link Clic Salud-->
+    <string name="clicSalud"><a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/clicsalud/">ClicSalud+</a></string>
+    <!--Salud Responde-->
+    <string name="saludResponde"><a href="http://www.sspa.juntadeandalucia.es/SaludResponde/AppMovil/">App Salud Responde</a></string>
+
+    <!--Número y Localización Salud Responde-->
+    <string name="tlfnoSaludRes">955 545 060</string>
+    <string name="latCentroSalud">36.62409540280809</string>
+    <string name="lonCentroSalud">-6.363445608804959</string>
+
+    <!-- Número Taxis Rota -->
+    <string name="tlfnoTaxis">956 840 085</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="?attr/actionBarSize"
+        tools:context=".ui.deInteres.DeInteresFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos de Interés"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvAddressCentroSalud"/>
+
+            <TextView
+                android:id="@+id/tvAddressCentroSalud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@android:drawable/ic_dialog_map"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/red"
+                android:text="Avda. María Auxiliadora, 41"
+                app:layout_constraintBottom_toTopOf="@+id/tvPhoneSaludResponde"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCentroSalud" />
+
+            <TextView
+                android:id="@+id/tvPhoneSaludResponde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/red"
+                android:focusable="false"
+                android:text="Salud Responde"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvClicSalud"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvAddressCentroSalud"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddressCentroSalud" />
+
+            <TextView
+                android:id="@+id/tvCentroSalud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:focusable="false"
+                android:text="Centro de Salud"
+                android:textColor="@color/green"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvAddressCentroSalud"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+
+            <TextView
+                android:id="@+id/tvClicSalud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="152dp"
+                android:layout_marginBottom="28dp"
+                android:drawableLeft="@drawable/ic_heart"
+                android:drawablePadding="20dp"
+                android:text="@string/clicSalud"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColorLink="@color/green"
+                app:layout_constraintBottom_toTopOf="@+id/tvAppSaludResponde"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvPhoneSaludResponde"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhoneSaludResponde" />
+
+
+            <TextView
+                android:id="@+id/tvAppSaludResponde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:gravity="center"
+                android:text="@string/saludResponde"
+                android:textColorLink="@color/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvClicSalud"
+                app:layout_constraintTop_toBottomOf="@+id/tvClicSalud" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

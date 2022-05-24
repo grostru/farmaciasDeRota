@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_deGuardia">
+
+    <fragment
+        android:id="@+id/navigation_deGuardia"
+        android:name="com.grt.farmacias.ui.deGuardia.DeGuardiaFragment"
+        android:label="@string/title_deGuardia"
+        tools:layout="@layout/fragment_de_guardia" />
+
+    <fragment
+        android:id="@+id/navigation_listadoFarmacias"
+        android:name="com.grt.farmacias.ui.listadoFarmacias.FarmaciasFragment"
+        android:label="@string/title_farmacias"
+        tools:layout="@layout/fragment_farmacias" >
+        <action
+            android:id="@+id/action_navigation_listadoFarmacias_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:popUpTo="@id/navigation_listadoFarmacias"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_deInteres"
+        android:name="com.grt.farmacias.ui.deInteres.DeInteresFragment"
+        android:label="@string/title_deInteres"
+        tools:layout="@layout/fragment_de_interes" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.grt.farmacias.ui.detail.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="farmacia"
+            app:argType="com.grt.farmacias.model.FarmaciasModel" />
+    </fragment>
+</navigation>

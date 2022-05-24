@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_deGuardia"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_deGuardia" />
+
+    <item
+        android:id="@+id/navigation_listadoFarmacias"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_farmacias" />
+
+    <item
+        android:id="@+id/navigation_deInteres"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_deInteres" />
+
+</menu>
