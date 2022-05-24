@@ -13,7 +13,6 @@ import androidx.navigation.fragment.navArgs
 import com.grt.farmacias.R
 import com.grt.farmacias.databinding.FragmentDetailBinding
 import com.grt.farmacias.model.FarmaciasModel
-import com.grt.pokemon.ui.detail.DetailViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
@@ -41,13 +40,13 @@ class DetailFragment : BaseFragment<FragmentDetailBinding, DetailViewModel>() {
 
         // Obtenemos la Farmcia que hemos clickeado en la lista para mostrarlo,
         // ya que lo hemos pasado como argumento en el Navigation
-        val pokemon = args.farmacia
-        vm.onAttachFarmacia(pokemon)
+        val farmacia = args.farmacia
+        vm.onAttachFarmacia(farmacia)
         observeData(vm.obsFarmacia,::onObserveFarmacia)
 
     }
 
-    // Establecemos los datos de Detalle del Pokemon Seleccionado en la lista
+    // Establecemos los datos de Detalle de la Farmacia Seleccionado en la lista
     private fun onObserveFarmacia(farmaciaModel: FarmaciasModel) {
         with(binding){
             tvDetailName.text = farmaciaModel.name.uppercase()

@@ -18,7 +18,6 @@ import com.grt.farmacias.databinding.FragmentDeInteresBinding
 import com.grt.farmacias.databinding.FragmentDetailBinding
 import com.grt.farmacias.model.FarmaciasModel
 import com.grt.farmacias.utils.UtilsFarmacias
-import com.grt.pokemon.ui.detail.DetailViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DeInteresFragment : BaseFragment<FragmentDeInteresBinding, DeInteresViewModel>() {
@@ -38,7 +37,7 @@ class DeInteresFragment : BaseFragment<FragmentDeInteresBinding, DeInteresViewMo
         setupBinding()
     }
 
-    // Establecemos los datos de Detalle del Pokemon Seleccionado en la lista
+    // Establecemos los datos de Detalle la Farmacia Seleccionado en la lista
     private fun setupBinding() {
         with(binding){
 

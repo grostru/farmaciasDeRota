@@ -32,8 +32,8 @@ class FarmaciasViewModel(
     }
 
     // Función encargada del manejo de haber hecho click en uno de los elementos de la lista de
-    // Pokemon y navega hasta la pantalla de Detalles
-    fun onActionPokemonClicked(farmaciaModel: FarmaciasModel) {
+    // Farmacias y navega hasta la pantalla de Detalles
+    fun onActionFarmaciasClicked(farmaciaModel: FarmaciasModel) {
         navigate(NavData(NAV_DETAIL, farmaciaModel))
     }
 }

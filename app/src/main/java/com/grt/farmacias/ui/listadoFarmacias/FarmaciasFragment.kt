@@ -27,7 +27,7 @@ class FarmaciasFragment : BaseFragment<FragmentFarmaciasBinding, FarmaciasViewMo
     private val farmaciaAdapter by lazy {
         FarmaciasAdapter(){
             // Capturamos la acción de pulsar en un elemento de la lista
-            vm.onActionPokemonClicked(it)
+            vm.onActionFarmaciasClicked(it)
         }
     }
 
