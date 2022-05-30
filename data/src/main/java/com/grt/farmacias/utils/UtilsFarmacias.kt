@@ -43,23 +43,34 @@ object UtilsFarmacias  {
         var hoy = ""
         var hora = ""
 
+        // La guardia de las farmacias cambia a las 9:30 de la mañana. Por tanto si está entre ese
+        // tramo horario ha de obtener la guardia del día anterior sino la del mismo día
+        var inicial = SimpleDateFormat("HH:mm").parse("00:00")
+        var final = SimpleDateFormat("HH:mm").parse("09:30")
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             var formatterDia = DateTimeFormatter.ofPattern("ddMM")
-            var formatterHora = DateTimeFormatter.ofPattern("HH")
+            var formatterHora = DateTimeFormatter.ofPattern("HH:mm")
+
             hora = LocalDateTime.now(ZoneId.systemDefault()).format(formatterHora)
             hoy = LocalDateTime.now().format(formatterDia)
-            if (hora.toInt()>=20)
-                hoy = LocalDateTime.now().plusDays(1).format(formatterDia)
 
+            var actual = SimpleDateFormat("HH:mm").parse(hora)
+
+            if (actual.after(inicial) && actual.before(final)) {
+                hoy = LocalDateTime.now().plusDays(-1).format(formatterDia)
+            }
         } else {
             val sdfDia = SimpleDateFormat("ddMM")
-            val sdfHora = SimpleDateFormat("HH")
+            val sdfHora = SimpleDateFormat("HH:mm")
             var date: Date = Calendar.getInstance().time
             hora = sdfHora.format(date)
 
-            if (hora.toInt()>=20) {
-                val calendar = Calendar.getInstance()
-                calendar.add(Calendar.DAY_OF_MONTH,1)
+            var actual = SimpleDateFormat("HH:mm").parse(hora)
+
+            if (actual.after(inicial) && actual.before(final)){
+                var calendar = Calendar.getInstance()
+                calendar.add(Calendar.DAY_OF_MONTH,-1)
                 date = calendar.time
             }
 

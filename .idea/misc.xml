@@ -18,6 +18,10 @@
         <entry key="..\:/AndroidStudioProjects/Farmacias/app/src/main/res/menu/bottom_nav_menu.xml" value="0.12447916666666667" />
         <entry key="..\:/AndroidStudioProjects/farmaciasDeRota-main/farmaciasDeRota-main/app/src/main/res/layout/activity_main.xml" value="0.12708333333333333" />
         <entry key="..\:/AndroidStudioProjects/farmaciasDeRota-main/farmaciasDeRota-main/app/src/main/res/layout/fragment_de_guardia.xml" value="0.24583333333333332" />
+        <entry key="..\:/AndroidStudioProjects/farmaciasDeRota-main/farmaciasDeRota-main/app/src/main/res/layout/fragment_de_interes.xml" value="0.12760416666666666" />
+        <entry key="..\:/AndroidStudioProjects/farmaciasDeRota-main/farmaciasDeRota-main/app/src/main/res/layout/fragment_detail.xml" value="0.12760416666666666" />
+        <entry key="..\:/AndroidStudioProjects/farmaciasDeRota-main/farmaciasDeRota-main/app/src/main/res/layout/fragment_farmacias.xml" value="0.12760416666666666" />
+        <entry key="..\:/AndroidStudioProjects/farmaciasDeRota-main/farmaciasDeRota-main/app/src/main/res/layout/item_farmacias.xml" value="0.12760416666666666" />
       </map>
     </option>
   </component>

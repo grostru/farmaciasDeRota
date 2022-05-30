@@ -32,8 +32,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         navView.setupWithNavController(navController)
 
         initListeners()
-
-        MobileAds.initialize(this) {}
     }
 
     fun showLoading() {

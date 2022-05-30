@@ -11,19 +11,16 @@ android {
 
     defaultConfig {
         applicationId "com.grt.farmacias"
-        minSdk 29
+        minSdk 24
         targetSdk 32
-        versionCode 9
-        versionName "1.0"
+        versionCode 10
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
         create("release") {
-            storeFile = file("myreleasekey.jks")
-            storePassword = "Trujillo25"
-            keyAlias = "MyReleaseKey"
-            keyPassword = "Trujillo25"
+
         }
     }
     buildTypes {
